@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://raunaqsingh.github.io/reed-gtm-sandbox/sitemap.xml
