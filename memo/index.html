@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reed Buyer Memo Sandbox</title>
+    <meta name="description" content="Paste a listing and request a Reed buyer decision memo.">
+    <link rel="stylesheet" href="../assets/styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="../"><span class="brand-mark">R</span><span>Reed sandbox</span></a>
+        <nav class="nav"><a href="../audit/">Seller audit</a><a href="../">Home</a></nav>
+      </header>
+      <main>
+        <section class="hero">
+          <div class="hero-grid">
+            <div>
+              <p class="eyebrow">Buyer memo</p>
+              <h1>Paste any listing before you tour.</h1>
+              <p class="lede">
+                Reed reviews the home like a decision memo: price sanity, risks, questions to ask, tour-worthiness, and what your agent should review before an offer.
+              </p>
+              <div class="cta-row">
+                <a class="button secondary" data-production-link="buying" href="https://reed.withroam.com/">Open live Reed chat</a>
+              </div>
+              <p class="fine-print">
+                Sandbox requests are reviewed for GTM validation. Reed does not send offers, negotiate, or replace an agent.
+              </p>
+            </div>
+            <form class="form-card" data-sandbox-form="buyer_memo" data-subject="Reed sandbox buyer memo request">
+              <h2>Request a memo</h2>
+              <div class="form-grid">
+                <label>Listing URL
+                  <input name="listing_url" type="url" placeholder="Paste Zillow, Redfin, Realtor.com, MLS, or listing link" required>
+                </label>
+                <label>Market
+                  <input name="market_text" type="text" placeholder="Austin, Houston, Tampa, etc.">
+                </label>
+                <label>What decision are you trying to make?
+                  <select name="decision">
+                    <option value="tour">Should I tour it?</option>
+                    <option value="price">What should I pay?</option>
+                    <option value="risk">What looks risky?</option>
+                    <option value="offer">What should my agent review before an offer?</option>
+                  </select>
+                </label>
+                <label>Email for the sandbox memo
+                  <input name="email" type="email" placeholder="you@example.com" required>
+                </label>
+                <label>Anything specific to check?
+                  <textarea name="notes" placeholder="Budget, timeline, inspection concern, spouse/parent/lender question, or offer issue"></textarea>
+                </label>
+                <input type="hidden" name="intent" value="buy">
+                <input type="hidden" name="_honey">
+                <button class="button" type="submit">Send memo request</button>
+                <a class="button secondary" data-mailto-fallback href="mailto:raunaq@withroam.com?subject=Reed%20sandbox%20buyer%20memo%20request">Email request instead</a>
+                <p class="status" data-form-status></p>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer class="footer"><div class="footer-inner"><span>Reed buyer memo sandbox</span><span>For decision support only.</span></div></footer>
+    </div>
+    <script src="../assets/app.js"></script>
+  </body>
+</html>

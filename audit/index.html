@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reed Seller Audit Sandbox</title>
+    <meta name="description" content="Request a Reed seller audit for what online estimates miss about your home.">
+    <link rel="stylesheet" href="../assets/styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="../"><span class="brand-mark">R</span><span>Reed sandbox</span></a>
+        <nav class="nav"><a href="../memo/">Buyer memo</a><a href="../">Home</a></nav>
+      </header>
+      <main>
+        <section class="hero">
+          <div class="hero-grid">
+            <div>
+              <p class="eyebrow">Seller audit</p>
+              <h1>What is Zillow missing about your home?</h1>
+              <p class="lede">
+                Generic estimates cannot see your kitchen, roof, systems, layout, repairs, finishes, seller timing, or buyer objections. Reed turns those details into a pricing-prep memo.
+              </p>
+              <div class="cta-row">
+                <a class="button secondary" data-production-link="selling" href="https://reed.withroam.com/">Open live Reed chat</a>
+              </div>
+              <p class="fine-print">
+                This is a sandbox pricing-prep request, not an appraisal or a listing agreement.
+              </p>
+            </div>
+            <form class="form-card" data-sandbox-form="seller_audit" data-subject="Reed sandbox seller audit request">
+              <h2>Request an audit</h2>
+              <div class="form-grid">
+                <label>Property address
+                  <input name="property_address" type="text" placeholder="Street, city, state" required>
+                </label>
+                <label>Market
+                  <input name="market_text" type="text" placeholder="Austin, Houston, Orlando, etc.">
+                </label>
+                <label>What should Reed account for?
+                  <textarea name="condition_notes" placeholder="Upgrades, repairs, roof/HVAC age, layout, pool, flood/weather risk, seller timeline, or comps you care about" required></textarea>
+                </label>
+                <label>Possible selling timeline
+                  <select name="timeline">
+                    <option value="just_curious">Just curious</option>
+                    <option value="0_3_months">0-3 months</option>
+                    <option value="3_6_months">3-6 months</option>
+                    <option value="6_12_months">6-12 months</option>
+                    <option value="already_listed">Already listed</option>
+                  </select>
+                </label>
+                <label>Email for the sandbox audit
+                  <input name="email" type="email" placeholder="you@example.com" required>
+                </label>
+                <input type="hidden" name="intent" value="sell">
+                <input type="hidden" name="_honey">
+                <button class="button" type="submit">Send audit request</button>
+                <a class="button secondary" data-mailto-fallback href="mailto:raunaq@withroam.com?subject=Reed%20sandbox%20seller%20audit%20request">Email request instead</a>
+                <p class="status" data-form-status></p>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer class="footer"><div class="footer-inner"><span>Reed seller audit sandbox</span><span>For pricing-prep validation only.</span></div></footer>
+    </div>
+    <script src="../assets/app.js"></script>
+  </body>
+</html>
