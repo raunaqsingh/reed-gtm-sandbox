@@ -35,3 +35,11 @@ Outputs:
 - `../demand_agents/output/reed_real_distribution_dashboard.csv`
 
 Every deal-check CTA routes to `withreed.com` with `utm_campaign=buyer_ai_demand`, `intent=buy`, `entry=listing_deal_check_page`, `market`, `listing_url`, and `asset_id`.
+
+Crawler discovery:
+
+```sh
+python3 scripts/submit_indexnow_deal_checks.py
+```
+
+The IndexNow key is hosted at `/6143ae831f600e5d0659d088edcf18ea.txt`; submission logs write to `../demand_agents/output/reed_indexnow_submission_log.csv`.
