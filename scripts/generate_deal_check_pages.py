@@ -87,6 +87,7 @@ def page_shell(title, description, canonical_path, body, css_prefix="../.."):
         </div>
       </footer>
     </div>
+    <script src="{css_prefix}/assets/deal-check.js"></script>
   </body>
 </html>
 """
